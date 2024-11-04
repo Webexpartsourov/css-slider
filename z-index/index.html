@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        .static {
+            position: static;
+            background-color: lightblue;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            background-color: lightgreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightcoral;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+        }
+
+        .container {
+            height: 1500px; /* To allow scrolling */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static">Static Position</div>
+        <p>this is paragraph</p>
+        <div class="relative">Relative Position</div>
+        <p>this is paragraph</p>
+        <div class="absolute">Absolute Position</div>
+        <p>this is paragraph</p>
+        <div class="sticky">Sticky Position</div>
+        <p>this is paragraph</p>
+        <div class="fixed">Fixed Position</div>
+    </div>
+</body>
+</html>
